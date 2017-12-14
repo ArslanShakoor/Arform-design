@@ -3,7 +3,7 @@ export default [
     name: 'first_name',
     label: 'First Name',
     type: 'text',
-    design: 'col-md-11 col-xs-12',
+    design: 'col-md-12 col-xs-12',
     req: true,
     min_length: 3,
     max_length: 20
