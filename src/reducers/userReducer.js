@@ -5,7 +5,8 @@ const user = [
     last_name: 'shakoor',
     email: 'arslantechielive@gmail.com',
     title: 'Frontend Developer(React.js)',
-    description: 'i dream javascript and react is my favorite library.'
+    description:
+      'Passionate Frontend Developer and I believe that a programming language is just a syntax, and if you are good at the basic concepts, you can switch to any language or framework.I dream javascript having experience in ReactJS/React Native/NodeJS/ROR.'
   }
 ];
 

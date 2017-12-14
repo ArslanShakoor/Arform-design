@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { reduxForm, Field } from 'redux-form';
+import { reduxForm } from 'redux-form';
 import _ from 'lodash';
 import './css/index.css';
 import * as actions from '../../actions';
@@ -19,7 +18,7 @@ class Main extends Component {
   }
 
   async componentDidMount() {
-    const fetch = await this.props.fetchUser();
+    await this.props.fetchUser();
     this.handleInitialize();
   }
 
@@ -46,7 +45,6 @@ class Main extends Component {
       <div className="section">
         <form onSubmit={handleSubmit(this.onCreatePost.bind(this))}>
           <div>{renderForm(userBioField.slice(3, 5))}</div>
-
           <button className="btn btn-success pull-right button-all">
             save
           </button>
@@ -75,7 +73,7 @@ class Main extends Component {
   userBioDetail = users => {
     return _.map(users, user => {
       return (
-        <div className="section">
+        <div className="section" key={Math.random()}>
           <div className="value"> First Name: {user.first_name}</div>
           <div className="value"> Last Name: {user.last_name}</div>
           <div className="value"> Email: {user.email}</div>
@@ -92,7 +90,7 @@ class Main extends Component {
   userTitleDetail = users => {
     return _.map(users, user => {
       return (
-        <div className="section">
+        <div className="section" key={Math.random()}>
           <div className="value"> title: {user.title}</div>
           <div className="value"> description: {user.description}</div>
           <button
@@ -116,11 +114,9 @@ class Main extends Component {
 
   render() {
     const { handleSubmit } = this.props;
-    console.log(this.props.user);
-    console.log(this.state.bio);
 
     return (
-      <div class="main">
+      <div className="main">
         <h1>Artform profile</h1>
         {this.state.bio
           ? this.userBioDetail(this.props.user)
