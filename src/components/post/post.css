@@ -1,0 +1,98 @@
+.post-container {
+  height: 490px;
+  display: flex;
+  align-items: flex-end;
+  height: 490px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  width: 100%;
+}
+.post-header .bio {
+  font-family: GTAmerica;
+  font-size: 18px;
+  line-height: 1.17;
+  float: left;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.post-header .bio .text-style-1 {
+  margin-left: 10px;
+  color: #757575;
+}
+.post-text {
+  font-family: GTAmerica;
+  font-size: 38px;
+  line-height: 1.37;
+  text-align: left;
+  margin-top: 20px;
+  color: #000000;
+}
+.post-footer {
+  font-family: GTAmerica;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: left;
+  color: #757575;
+}
+.post-footer .share {
+  margin-left: 10px;
+}
+
+.post-img {
+  width: 42px;
+  height: 42px;
+  radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+
+.contain {
+  padding-top: 60px;
+}
+.photo {
+  display: flex;
+  width: 100%;
+  height: 490px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(red, yellow);
+}
+.exclusive-head {
+  font-family: GTAmerica;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+.exclusive-detail {
+  opacity: 0.92;
+  font-family: GTAmerica;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.exlusive-button {
+  width: 132px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 20px;
+  background-color: rgba(239, 239, 239, 0.4);
+}
+
+.button-content {
+  font-family: GTAmerica;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .post-container {
+    height: auto;
+  }
+}

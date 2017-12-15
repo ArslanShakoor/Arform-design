@@ -1,0 +1,72 @@
+input {
+  border-radius: 4px;
+  background-color: rgba(239, 239, 239, 0.4);
+}
+
+::placeholder {
+  opacity: 0.4;
+  font-family: GTAmerica;
+  font-size: 16px;
+  text-align: left;
+  color: #000000;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 62px;
+  width: 100%;
+}
+
+.item {
+  font-family: GTAmerica;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: right;
+  color: #000000;
+  padding: 16px;
+  float: left;
+}
+.navbar {
+  background-color: #ffffff;
+  border: none;
+}
+
+.logo {
+  font-family: GTAmerica;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: left;
+  color: #08006f;
+  float: left;
+  display: flex;
+  padding-top: 11px;
+  padding-left: 11px;
+}
+.header-img {
+  width: 36px;
+  height: 36px;
+  radius: 50%;
+  margin-top: -10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.search {
+  width: 360px;
+  height: 35px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .item {
+    float: none;
+    background-color: grey;
+    border: none;
+  }
+  .search {
+    width: 200px;
+  }
+}

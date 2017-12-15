@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 import Main from './components/user/Main';
+import Header from './components/header/Header';
+import Post from './components/post/post';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +11,8 @@ class App extends Component {
       <div className="App container">
         <BrowserRouter>
           <div>
-            <Route exact path="/" component={Main} />
+            <Header />
+            <Route exact path="/" component={Post} />
           </div>
         </BrowserRouter>
       </div>
